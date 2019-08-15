@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 
 <!--
+/**********************************************************
+// Assignment 2
+// Version 1.0
+// Date: 2019-08-14
+// Author: Ricardo Medeiros
+// ID: 135745180
+// Email: rmedeiros7@myseneca.ca
+// Section: SDD
+**********************************************************/
+
     This math game consist of 3 levels game.
     First level is addition, second level is subtraction, third level is division.
 -->
 
 <head>
     <title>Fun Math Game</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
     <header>
+        <div></div>
         <div id="headerLeft">
             <h1>Fun Math Game</h1>
         </div>
-        <div id="headerRight">
-        </div>
+        <a>
+            <div id="headerRight">
+                <img id="audioButton" src="img/sound.png" width="35px">
+                <audio id="audio" src="/sound/bg-sound.mp3" preload="auto">
+                </audio>
+            </div>
+        </a>
     </header>
 
     <section id="levels">
-        <h2>Click on level below to play</h2>
-        <a href="#">
-            <div id="level1">
-                <h4>Level 1</h4>
-                <h5>ADD</h5>
-            </div>
-        </a>
-        <a href="#">
-            <div id="level2">
-                <h4>Level 2</h4>
-                <h5>SUBTRACTION</h5>
-            </div>
-        </a>
-        <a href="#">
-            <div id="level3">
-                <h4>Level 3</h4>
-                <h5>DIVISION</h5>
-            </div>
-        </a>
+        <div id="level1">
+            <h4>Level 1</h4>
+            <h5>Addition</h5>
+            <h6>Example: 8 + 3 = 11</h6>
+        </div>
+        <div id="level2">
+            <h4>Level 2</h4>
+            <h5>Subtraction</h5>
+            <h6>Example: 8 - 3 = 5</h6>
+        </div>
+        <div id="level3">
+            <h4>Level 3</h4>
+            <h5>Division</h5>
+            <h6>Example: 8 / 2 = 4</h6>
+        </div>
     </section>
 
     <main>
@@ -49,29 +62,24 @@
             </div>
             <div>
                 <input type="button" id="rules" value="RULES">
-            </div>
-        </div>
-        <div id="mainBot">
-            <div id="img1">
-
-            </div>
-            <div id="img2">
-
-            </div>
-            <div id="img3">
-
+                <div id="hiddenRules">
+                    <p>
+                        Level 1: 90s
+                    </p>
+                    <p>
+                        Level 2: 120s
+                    </p>
+                    <p>
+                        Level 3: 150s
+                    </p>
+                    <p>
+                        Maximum misses allowed per level: 5
+                    </p>
+                </div>
             </div>
         </div>
     </main>
-    <div id="score">
-        
-    </div>
-    <div id="count">
-        
-    </div>
-    <div id="addArea">
-        
-    </div>
+
 
     <script src="js/script.js"></script>
 </body>

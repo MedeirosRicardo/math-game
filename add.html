@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 
 <!--
+/**********************************************************
+// Assignment 2
+// Version 1.0
+// Date: 2019-08-14
+// Author: Ricardo Medeiros
+// ID: 135745180
+// Email: rmedeiros7@myseneca.ca
+// Section: SDD
+**********************************************************/
+
     This math game consist of 3 levels game.
     First level is addition, second level is subtraction, third level is division.
 -->
 
 <head>
     <title>Fun Math Game</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+
     <header>
+        <div></div>
         <div id="headerLeft">
             <h1>Fun Math Game</h1>
         </div>
-        <div id="headerRight">
-        </div>
+        <a>
+            <div id="headerRight">
+                <img id="audioButton" src="img/sound.png" width="35px">
+                <audio id="audio" src="/sound/bg-sound.mp3" preload="auto">
+                </audio>
+            </div>
+        </a>
     </header>
+
+    <main>
+        <h2 id="level">Level 1 - Addition</h2>
+    </main>
 
     <section id="scoreSection">
         <div id="timerDiv"></div>
@@ -25,7 +47,6 @@
         <div id="missDiv"></div>
         <div id="scoreDiv"></div>
     </section>
-    
     <script src="js/script.js"></script>
 </body>
 
