@@ -104,7 +104,7 @@ function numberArray(a, b) {
     b = []; while (a--) b[a] = a + 1; return b
 }
 
-// Function to shuffle array - Fisher Yates
+// Function to shuffle array - Fisher Yates shuffle
 function fy(a, b, c, d) { c = a.length; while (c) b = Math.random() * c-- | 0, d = a[c], a[c] = a[b], a[b] = d }
 
 // Countdown Function
@@ -155,7 +155,7 @@ audioButton.addEventListener("click", playPause);
 // Function to display rules
 if (window.location.pathname === '/' || window.location.href.match(/index/)) {
     function rule() {
-        if (hiddenRules.style.display === "none") {
+        if (!hiddenRules.style.display || hiddenRules.style.display === "none") {
             hiddenRules.style.display = "block";
         } else {
             hiddenRules.style.display = "none";
